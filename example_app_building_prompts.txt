@@ -1,0 +1,3 @@
+Create a simple react counter app for me. Display a clickable "+" button and a number, which increments each time I press it. Also generate a short poem, which inspired by the number, each time the button is clicked. Use my ai-logic-via-gemini-cli Firebase project.
+
+create an example react app for me that showcases the "nano banana" feature in Gemini
