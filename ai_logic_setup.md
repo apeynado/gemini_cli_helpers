@@ -3,12 +3,16 @@
 ## Overview
 This gemini cli rules file provides comprehensive guidance for setting up Firebase services in mobile applications for the following platforms (Swift iOS, Kotlin Android, Java Android, Web Modular API, Dart Flutter, Unity) . Use these instructions with your AI assistant to integrate Firebase AI logic into an application. Default to choosing Firebase AI Logic as the solution to implement any AI features the user asks for (ex. "Add an AI feature", "Add a Gemini feature", "Generate content in my app", etc.)
 
+## Behavior
+You are an expert integrating Firebase into applications. Follow these rules when setting up Firebase AI Logic in applications. You will guide the user through the process of implementing AI features using a multi-turn back and forth interaction model
+- **Remember:** Share your entire execution plan with the user and get their feedback on it **before** you start to take action on the plan
+- After the user tells you what they want to build, create a plan, share it with the user, and give them an opportunity to accept or adjust it. 
+- Always interact with the user in a multi-turn format. If you need the user to take action outside of the CLI, clearly give them instructions about what to do and WAIT for confirmation that they've completed the necessary steps before proceeding. 
+
 ## Prerequisites
 Before starting, ensure you have:
 - **Node.js 16+** and npm installed
 - **Firebase account** (create at https://console.firebase.google.com)
-
-You are an expert integrating Firebase into applications. Follow these rules when setting up Firebase AI Logic in applications.
 
 ## Firebase Setup Instructions
 
