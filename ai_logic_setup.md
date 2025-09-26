@@ -19,15 +19,7 @@ Before starting, ensure you have **Node.js 16+** and npm installed. Install them
 
 ## Firebase Setup Instructions
 
-### 1: Set up the Firebase MCP server
-
-When user asks to set up Firebase AI Logic or asks to add Gemini to their app:
-
-- First, ensure Firebase MCP server is set up based on this documentation: [https://firebase.google.com/docs/cli/mcp-server\#before-you-begin](https://firebase.google.com/docs/cli/mcp-server#before-you-begin)  
-- This automatically installs Node.js and Firebase CLI if needed.  
-- Verify Firebase MCP server tools are available before proceeding
-
-### 2\. Understand the Application Setup
+### 1\. Understand the Application Setup
 
 Scan the application files to identify what type of application the user is building. Ask the user to tell you which language and platform they are targeting if you cannot identify it yourself.
 
@@ -48,42 +40,12 @@ Take the following actions depending on the language and platform or framework t
 
 ### 2.1 \[WEB\] Set up a Firebase Project and Firebase AI Logic
 
-#### Set up the Firebase Project
-
-Always ensure the latest Firebase JavaScript SDK is installed using \`npm\`. always do \`npm install firebase@latest\`
-
-Next ask the developer if they want a new Firebase project or if they already have an existing Firebase project they would like to use
-
-**For New Firebase Project:**
-
-- Create a new Firebase project and web app using MCP server tools  
-- **Do not ask developers to go to Firebase console** \- handle this automatically
-
-**For Existing Firebase Project:**
-
-- Ask developer for their Firebase Project ID  
-- Use MCP server tools to connect the existing Firebase app to this project
-
 #### Set up Firebase AI Logic Backend
 
 - Use the firebase_init tool to set up ailogic
 - **Never use the Vertex AI Gemini API backend service (vertexAI). Always use the Gemini Developer API backend service (googleAI).**
 
 ### 2.2 \[ANDROID\] Set up a Firebase Project and Firebase AI Logic
-
-#### Set up the Firebase Project
-
-Start by asking the developer if they want a new Firebase project or if they already have an existing Firebase project they would like to use
-
-**For New Firebase Project:**
-
-- Create a new Firebase project and android app using MCP server tools  
-- **Do not ask developers to go to Firebase console** \- handle this automatically
-
-**For Existing Firebase Project:**
-
-- Ask developer for their Firebase Project ID  
-- Use MCP server tools to connect the existing Firebase app to this project
 
 #### Set up Firebase AI Logic Backend
 
@@ -92,23 +54,13 @@ Start by asking the developer if they want a new Firebase project or if they alr
 
 ### 2.3 \[FLUTTER\] Set up a Firebase Project and Firebase AI Logic
 
-#### Set up the Firebase Project
+#### Set up Flutterfire
 
-Start by asking the developer if they want a new Firebase project or if they already have an existing Firebase project they would like to use
-
-**For New Firebase Project:**
-
-- Install the Flutterfire CLI  
-- Use the Flutterfire CLI to create a new firebase project and register the appropriate applications based on the user’s input. Ask the user which combination of ios, android, and web targets they want then register the appropriate apps in the project using the flutterfire CLI  
-- **Do not ask developers to go to Firebase console** \- handle this automatically
-
-**For Existing Firebase Project:**
-
-- Ask developer for their Firebase Project ID  
-- Install the Flutterfire CLI  
+- Install the Flutterfire CLI 
 - Use the Flutterfire CLI tool to connect to the project  
 - Use the Flutterfire CLI to connect to the existing firebase project and register the appropriate applications based on the user’s input. Ask the user which combination of ios, android, and web targets they want then register the appropriate apps in the project using the flutterfire CLI  
 - **Do not ask developers to go to Firebase console** \- handle this automatically
+- Always import firebase_ai 
 
 #### Set up Firebase AI Logic Backend
 
